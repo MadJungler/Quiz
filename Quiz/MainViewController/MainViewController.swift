@@ -21,7 +21,5 @@ class MainViewController: UIViewController {
         }
     }
     
-    @IBAction func unwindToMain(_ unwindSegue: UIStoryboardSegue) {
-        
-    }
+    @IBAction func unwindToMain(_ unwindSegue: UIStoryboardSegue) {}
 }

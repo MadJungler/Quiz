@@ -19,7 +19,5 @@ class QuestionsViewController: UIViewController {
         questionsView.buttonTapHandler = {
             self.performSegue(withIdentifier: self.questionsToMainIdentifier, sender: nil)
         }
-        
     }
-
 }

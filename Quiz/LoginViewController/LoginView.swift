@@ -26,6 +26,4 @@ class LoginView: UIView {
     @IBAction func buttonViewDidTap(_ sender: UIButton) {
         buttonTapHandler?()
     }
-    
 }
-
