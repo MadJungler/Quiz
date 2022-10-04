@@ -26,6 +26,7 @@
 		FFE650EC28AE9BDC00AA1DCE /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE650EB28AE9BDC00AA1DCE /* LoginViewController.swift */; };
 		FFE650EE28AE9C3C00AA1DCE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE650ED28AE9C3C00AA1DCE /* MainViewController.swift */; };
 		FFE650F028AE9C5400AA1DCE /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE650EF28AE9C5400AA1DCE /* QuestionsViewController.swift */; };
+		FFE865B728C1118A00159730 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE865B628C1118A00159730 /* QuestionsModel.swift */; };
 		FFED14BD28ABCE9000C94F37 /* PollModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED14BC28ABCE9000C94F37 /* PollModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -51,6 +52,7 @@
 		FFE650EB28AE9BDC00AA1DCE /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		FFE650ED28AE9C3C00AA1DCE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		FFE650EF28AE9C5400AA1DCE /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
+		FFE865B628C1118A00159730 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
 		FFED14BC28ABCE9000C94F37 /* PollModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,6 +138,7 @@
 				FFE650EF28AE9C5400AA1DCE /* QuestionsViewController.swift */,
 				FF2D2AB528B40F4600C64947 /* QuestionsViewController.storyboard */,
 				FFB50DA228B7C9AC003B4F95 /* QuestionsView.swift */,
+				FFE865B628C1118A00159730 /* QuestionsModel.swift */,
 				FFB50DA428B7C9C3003B4F95 /* QuestionsView.xib */,
 			);
 			path = QuestionsViewController;
@@ -221,6 +224,7 @@
 				FFE650F028AE9C5400AA1DCE /* QuestionsViewController.swift in Sources */,
 				FFA069F728ABA20600E873C1 /* AppDelegate.swift in Sources */,
 				FFED14BD28ABCE9000C94F37 /* PollModel.swift in Sources */,
+				FFE865B728C1118A00159730 /* QuestionsModel.swift in Sources */,
 				FFB50DA728B7CB63003B4F95 /* MainView.swift in Sources */,
 				FFE650EE28AE9C3C00AA1DCE /* MainViewController.swift in Sources */,
 				FF75726128AFFA0A00C549A3 /* +UIView.swift in Sources */,
