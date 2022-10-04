@@ -10,7 +10,7 @@ import UIKit
 class MainView: UIView {
     private lazy var xibView: UIView = getViewFromXib() ?? UIView()
     
-    var buttonTapHandler: (() -> Void)?
+    var buttonTapHandler: ((Int) -> Void)?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -22,6 +22,6 @@ class MainView: UIView {
 }
 
     @IBAction func buttonViewDidTap(_ sender: UIButton) {
-        buttonTapHandler?()
+        buttonTapHandler?(sender.tag)
     }
 }
