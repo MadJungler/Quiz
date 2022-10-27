@@ -28,26 +28,25 @@
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 </imageView>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="OGI-Zd-hjU" customClass="ProgressView" customModule="Quiz" customModuleProvider="target">
-                    <rect key="frame" x="87" y="103" width="240" height="128"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <color key="backgroundColor" systemColor="systemGreenColor"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OGI-Zd-hjU" customClass="ProgressView" customModule="Quiz" customModuleProvider="target">
+                    <rect key="frame" x="10" y="64" width="394" height="40"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="wkA-u7-jZm"/>
+                    </constraints>
                 </view>
-                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-05-Wpx">
-                    <rect key="frame" x="20" y="324" width="374" height="529"/>
-                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" heightSizable="YES"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nR-05-Wpx">
+                    <rect key="frame" x="20" y="354" width="374" height="528"/>
                     <subviews>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9x-cc-lAe">
-                            <rect key="frame" x="6" y="255" width="358" height="31"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            <state key="normal" title="Button"/>
-                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                            <connections>
-                                <action selector="answerButtonDidTap:" destination="-1" eventType="touchUpInside" id="mgD-gW-36b"/>
-                            </connections>
-                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NB-Mw-iZm">
+                            <rect key="frame" x="147" y="8" width="71" height="36"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f1r-bh-fbR">
-                            <rect key="frame" x="6" y="216" width="358" height="31"/>
+                            <rect key="frame" x="152" y="164" width="71" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -55,17 +54,17 @@
                                 <action selector="answerButtonDidTap:" destination="-1" eventType="touchUpInside" id="dVW-cB-HO4"/>
                             </connections>
                         </button>
-                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYa-Us-INQ">
-                            <rect key="frame" x="6" y="294" width="358" height="31"/>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="1000" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h9x-cc-lAe">
+                            <rect key="frame" x="152" y="222" width="71" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Button"/>
                             <connections>
-                                <action selector="answerButtonDidTap:" destination="-1" eventType="touchUpInside" id="HjQ-45-hID"/>
+                                <action selector="answerButtonDidTap:" destination="-1" eventType="touchUpInside" id="mgD-gW-36b"/>
                             </connections>
                         </button>
                         <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2As-EC-0ph">
-                            <rect key="frame" x="6" y="333" width="358" height="31"/>
+                            <rect key="frame" x="152" y="113" width="71" height="50"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -73,19 +72,27 @@
                                 <action selector="answerButtonDidTap:" destination="-1" eventType="touchUpInside" id="abX-C5-nNy"/>
                             </connections>
                         </button>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3NB-Mw-iZm">
-                            <rect key="frame" x="6" y="40" width="358" height="139"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                            <nil key="textColor"/>
-                            <nil key="highlightedColor"/>
-                        </label>
+                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aYa-Us-INQ">
+                            <rect key="frame" x="152" y="55" width="71" height="50"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                            <connections>
+                                <action selector="answerButtonDidTap:" destination="-1" eventType="touchUpInside" id="HjQ-45-hID"/>
+                            </connections>
+                        </button>
+                        <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Bwc-T3-zaW">
+                            <rect key="frame" x="34" y="38" width="110" height="200"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </stackView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-8a-tUi">
-                    <rect key="frame" x="174" y="248" width="67" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jlt-8a-tUi">
+                    <rect key="frame" x="100" y="204" width="214" height="100"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="100" id="n4x-Uo-LmW"/>
+                    </constraints>
                     <state key="normal" title="Button"/>
                     <buttonConfiguration key="configuration" style="plain" title="Button">
                         <color key="baseForegroundColor" systemColor="systemRedColor"/>
@@ -97,7 +104,19 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBrownColor"/>
-            <point key="canvasLocation" x="-19659" y="-3051"/>
+            <constraints>
+                <constraint firstItem="OGI-Zd-hjU" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="3mk-9W-Bd2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1nR-05-Wpx" secondAttribute="trailing" constant="20" id="FD7-yj-h26"/>
+                <constraint firstItem="1nR-05-Wpx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="H8r-DK-T5f"/>
+                <constraint firstItem="1nR-05-Wpx" firstAttribute="top" secondItem="Jlt-8a-tUi" secondAttribute="bottom" constant="50" id="Jp9-bQ-PUT"/>
+                <constraint firstItem="Jlt-8a-tUi" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="100" id="aBi-n1-jMh"/>
+                <constraint firstItem="Jlt-8a-tUi" firstAttribute="top" secondItem="OGI-Zd-hjU" secondAttribute="bottom" constant="100" id="ivk-fN-qwa"/>
+                <constraint firstItem="1nR-05-Wpx" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" constant="20" id="nXU-ux-O6G"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Jlt-8a-tUi" secondAttribute="trailing" constant="100" id="nii-Xc-hLI"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="OGI-Zd-hjU" secondAttribute="trailing" constant="10" id="vWd-99-3Bb"/>
+                <constraint firstItem="OGI-Zd-hjU" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="wiz-dk-SgR"/>
+            </constraints>
+            <point key="canvasLocation" x="-19660.869565217392" y="-3051.5625"/>
         </view>
     </objects>
     <resources>
@@ -107,9 +126,6 @@
         </systemColor>
         <systemColor name="systemBrownColor">
             <color red="0.63529411764705879" green="0.51764705882352946" blue="0.36862745098039218" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

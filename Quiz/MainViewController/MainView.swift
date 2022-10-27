@@ -9,7 +9,7 @@ import UIKit
 
 class MainView: UIView {
     private lazy var xibView: UIView = getViewFromXib() ?? UIView()
-    
+    @IBOutlet var nameLabel: UILabel!
     var buttonTapHandler: ((Int) -> Void)?
     
     required init?(coder: NSCoder) {
@@ -20,7 +20,9 @@ class MainView: UIView {
         super.layoutSubviews()
         xibView.frame = self.bounds
 }
-
+    func setupName(_ name: String) {
+        nameLabel.text = name
+    }
     @IBAction func buttonViewDidTap(_ sender: UIButton) {
         buttonTapHandler?(sender.tag)
     }

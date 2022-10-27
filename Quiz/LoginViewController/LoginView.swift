@@ -9,9 +9,12 @@ import UIKit
 
 class LoginView: UIView {
     
+    @IBOutlet weak var nameTextField: UITextField!
+    @IBOutlet weak var bottomFormConstraint: NSLayoutConstraint!
+    
     private lazy var xibView: UIView = getViewFromXib() ?? UIView()
     
-    var buttonTapHandler: (() -> Void)?
+    var buttonTapHandler: ((String) -> Void)?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
@@ -24,6 +27,7 @@ class LoginView: UIView {
     }
     
     @IBAction func buttonViewDidTap(_ sender: UIButton) {
-        buttonTapHandler?()
+        guard let text = nameTextField.text else { return }
+        buttonTapHandler?(text)
     }
 }

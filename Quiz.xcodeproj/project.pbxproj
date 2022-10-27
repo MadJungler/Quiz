@@ -70,7 +70,6 @@
 		FF75725728AFEDA300C549A3 /* CustomProgressView */ = {
 			isa = PBXGroup;
 			children = (
-				FF75726028AFFA0A00C549A3 /* +UIView.swift */,
 				FF75725C28AFF9C700C549A3 /* ProgressView.swift */,
 				FF75725E28AFF9E800C549A3 /* ProgressView.xib */,
 			);
@@ -99,6 +98,7 @@
 				FFA069F628ABA20600E873C1 /* AppDelegate.swift */,
 				FFA069F828ABA20600E873C1 /* SceneDelegate.swift */,
 				FFED14BC28ABCE9000C94F37 /* PollModel.swift */,
+				FF75726028AFFA0A00C549A3 /* +UIView.swift */,
 				FF75725728AFEDA300C549A3 /* CustomProgressView */,
 				FFA30A3228B014A3009DC394 /* LoginViewController */,
 				FFA30A3028B0141D009DC394 /* MainViewController */,
@@ -117,6 +117,7 @@
 				FF2D2AB328B40EE500C64947 /* MainViewController.storyboard */,
 				FFB50DA628B7CB63003B4F95 /* MainView.swift */,
 				FFB50DA828B7CB7B003B4F95 /* MainView.xib */,
+				FFF937C4290A9B7900E75A5D /* SettupView */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -142,6 +143,13 @@
 				FFB50DA428B7C9C3003B4F95 /* QuestionsView.xib */,
 			);
 			path = QuestionsViewController;
+			sourceTree = "<group>";
+		};
+		FFF937C4290A9B7900E75A5D /* SettupView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SettupView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
