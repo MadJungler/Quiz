@@ -11,10 +11,14 @@ class MainView: UIView {
     private lazy var xibView: UIView = getViewFromXib() ?? UIView()
     @IBOutlet var nameLabel: UILabel!
     var buttonTapHandler: ((Int) -> Void)?
+    var settingButtonTapHandler: (() -> Void)?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubview(xibView)
+    }
+    @IBAction func settingsButtonDidTap(_ sender: UIButton) {
+        settingButtonTapHandler?()
     }
     override func layoutSubviews() {
         super.layoutSubviews()

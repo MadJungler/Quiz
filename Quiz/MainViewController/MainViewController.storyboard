@@ -22,11 +22,22 @@
                     <connections>
                         <outlet property="mainView" destination="Fm3-OM-JCB" id="LJz-1e-pVq"/>
                         <segue destination="JAl-sn-joE" kind="show" identifier="mainToQuestions" id="2C0-He-8bP"/>
+                        <segue destination="eBD-1K-mMD" kind="show" identifier="MainToSetup" id="XIo-aR-rlB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RL3-RG-Tji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-733" y="263"/>
+        </scene>
+        <!--SetupViewController-->
+        <scene sceneID="OCu-NH-WKN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetupViewController" id="eBD-1K-mMD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a4c-pZ-atu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lne-ve-9vw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="192"/>
         </scene>
         <!--questionScreen-->
         <scene sceneID="88g-X2-aUB">

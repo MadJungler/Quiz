@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+class Setting {
+    static let shared = Setting()
+    private (set) var isRandomOrder: Bool
+    private init() {
+        isRandomOrder = false
+    }
+    
+    func setOrder(isRandom: Bool) {
+        isRandomOrder = isRandom
+    }
+}

@@ -9,7 +9,7 @@ import Foundation
 
 struct PollModel {
     let name: String
-    let questions: [QuestionModel]
+    var questions: [QuestionModel]
 }
 
 struct QuestionModel {

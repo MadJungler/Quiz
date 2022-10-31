@@ -8,13 +8,25 @@
 import UIKit
 
 class SetupView: UIView {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
-    override func draw(_ rect: CGRect) {
-        // Drawing code
+    private lazy var xibView: UIView = getViewFromXib() ?? UIView()
+    var mainButtonTapHandler: (() -> Void)?
+    var shuffleSwitchHandler: ((Bool) -> Void)?
+    @IBOutlet weak var shuffleSwitch: UISwitch!
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        addSubview(xibView)
     }
-    */
-
+    
+    @IBAction func backButtonDidTap(_ sender: UIButton) {
+        mainButtonTapHandler?()
+    }
+    
+    @IBAction func shuffleDidTap(_ sender: UISwitch) {
+        shuffleSwitchHandler?(sender.isOn)
+    }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        xibView.frame = self.bounds
+    }
 }

@@ -12,6 +12,7 @@ class LoginView: UIView {
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var bottomFormConstraint: NSLayoutConstraint!
     
+    
     private lazy var xibView: UIView = getViewFromXib() ?? UIView()
     
     var buttonTapHandler: ((String) -> Void)?

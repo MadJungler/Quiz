@@ -36,7 +36,11 @@ class QuestionsViewController: UIViewController {
         }
         
         let pollstorage = PollStorage()
-        let firstPoll = pollstorage.polls[pollIndex]
+        var firstPoll = pollstorage.polls[pollIndex]
+        
+        if Setting.shared.isRandomOrder {
+            firstPoll.questions.shuffle()
+        }
         
         func questionLoad() {
             time = maxTime

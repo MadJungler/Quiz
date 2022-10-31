@@ -17,6 +17,7 @@
 		FFA069F928ABA20600E873C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA069F828ABA20600E873C1 /* SceneDelegate.swift */; };
 		FFA06A0028ABA20900E873C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA069FF28ABA20900E873C1 /* Assets.xcassets */; };
 		FFA06A0328ABA20900E873C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFA06A0128ABA20900E873C1 /* LaunchScreen.storyboard */; };
+		FFB457A0290ECA34002010A2 /* Setting.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB4579F290ECA34002010A2 /* Setting.swift */; };
 		FFB50DA328B7C9AC003B4F95 /* QuestionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB50DA228B7C9AC003B4F95 /* QuestionsView.swift */; };
 		FFB50DA528B7C9C3003B4F95 /* QuestionsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFB50DA428B7C9C3003B4F95 /* QuestionsView.xib */; };
 		FFB50DA728B7CB63003B4F95 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFB50DA628B7CB63003B4F95 /* MainView.swift */; };
@@ -28,6 +29,10 @@
 		FFE650F028AE9C5400AA1DCE /* QuestionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE650EF28AE9C5400AA1DCE /* QuestionsViewController.swift */; };
 		FFE865B728C1118A00159730 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFE865B628C1118A00159730 /* QuestionsModel.swift */; };
 		FFED14BD28ABCE9000C94F37 /* PollModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFED14BC28ABCE9000C94F37 /* PollModel.swift */; };
+		FFFCA0E7290ABBD300A5CEE7 /* SetupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFCA0E5290ABBD300A5CEE7 /* SetupViewController.swift */; };
+		FFFCA0EA290ABC1B00A5CEE7 /* SetupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFFCA0E9290ABC1B00A5CEE7 /* SetupView.swift */; };
+		FFFCA0EC290ABC3A00A5CEE7 /* SetupView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFFCA0EB290ABC3A00A5CEE7 /* SetupView.xib */; };
+		FFFCA0EE290AC3A800A5CEE7 /* SetupViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FFFCA0ED290AC3A800A5CEE7 /* SetupViewController.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +48,7 @@
 		FFA069FF28ABA20900E873C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FFA06A0228ABA20900E873C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FFA06A0428ABA20900E873C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FFB4579F290ECA34002010A2 /* Setting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Setting.swift; sourceTree = "<group>"; };
 		FFB50DA228B7C9AC003B4F95 /* QuestionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsView.swift; sourceTree = "<group>"; };
 		FFB50DA428B7C9C3003B4F95 /* QuestionsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QuestionsView.xib; sourceTree = "<group>"; };
 		FFB50DA628B7CB63003B4F95 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -54,6 +60,10 @@
 		FFE650EF28AE9C5400AA1DCE /* QuestionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewController.swift; sourceTree = "<group>"; };
 		FFE865B628C1118A00159730 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
 		FFED14BC28ABCE9000C94F37 /* PollModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PollModel.swift; sourceTree = "<group>"; };
+		FFFCA0E5290ABBD300A5CEE7 /* SetupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SetupViewController.swift; path = Quiz/MainViewController/SetupViewController.swift; sourceTree = SOURCE_ROOT; };
+		FFFCA0E9290ABC1B00A5CEE7 /* SetupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetupView.swift; sourceTree = "<group>"; };
+		FFFCA0EB290ABC3A00A5CEE7 /* SetupView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetupView.xib; sourceTree = "<group>"; };
+		FFFCA0ED290AC3A800A5CEE7 /* SetupViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SetupViewController.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,7 +112,9 @@
 				FF75725728AFEDA300C549A3 /* CustomProgressView */,
 				FFA30A3228B014A3009DC394 /* LoginViewController */,
 				FFA30A3028B0141D009DC394 /* MainViewController */,
+				FFF937C4290A9B7900E75A5D /* SetupViewController */,
 				FFA30A3328B014CA009DC394 /* QuestionsViewController */,
+				FFB4579E290EC9E8002010A2 /* Services */,
 				FFA069FF28ABA20900E873C1 /* Assets.xcassets */,
 				FFA06A0128ABA20900E873C1 /* LaunchScreen.storyboard */,
 				FFA06A0428ABA20900E873C1 /* Info.plist */,
@@ -117,7 +129,6 @@
 				FF2D2AB328B40EE500C64947 /* MainViewController.storyboard */,
 				FFB50DA628B7CB63003B4F95 /* MainView.swift */,
 				FFB50DA828B7CB7B003B4F95 /* MainView.xib */,
-				FFF937C4290A9B7900E75A5D /* SettupView */,
 			);
 			path = MainViewController;
 			sourceTree = "<group>";
@@ -139,17 +150,29 @@
 				FFE650EF28AE9C5400AA1DCE /* QuestionsViewController.swift */,
 				FF2D2AB528B40F4600C64947 /* QuestionsViewController.storyboard */,
 				FFB50DA228B7C9AC003B4F95 /* QuestionsView.swift */,
-				FFE865B628C1118A00159730 /* QuestionsModel.swift */,
 				FFB50DA428B7C9C3003B4F95 /* QuestionsView.xib */,
+				FFE865B628C1118A00159730 /* QuestionsModel.swift */,
 			);
 			path = QuestionsViewController;
 			sourceTree = "<group>";
 		};
-		FFF937C4290A9B7900E75A5D /* SettupView */ = {
+		FFB4579E290EC9E8002010A2 /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				FFB4579F290ECA34002010A2 /* Setting.swift */,
 			);
-			path = SettupView;
+			path = Services;
+			sourceTree = "<group>";
+		};
+		FFF937C4290A9B7900E75A5D /* SetupViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FFFCA0E5290ABBD300A5CEE7 /* SetupViewController.swift */,
+				FFFCA0ED290AC3A800A5CEE7 /* SetupViewController.storyboard */,
+				FFFCA0E9290ABC1B00A5CEE7 /* SetupView.swift */,
+				FFFCA0EB290ABC3A00A5CEE7 /* SetupView.xib */,
+			);
+			path = SetupViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -216,7 +239,9 @@
 				FF75725F28AFF9E800C549A3 /* ProgressView.xib in Resources */,
 				FF2D2AB228B40EA700C64947 /* LoginViewController.storyboard in Resources */,
 				FF2D2AB728B40F4600C64947 /* QuestionsViewController.storyboard in Resources */,
+				FFFCA0EC290ABC3A00A5CEE7 /* SetupView.xib in Resources */,
 				FFB50DA928B7CB7B003B4F95 /* MainView.xib in Resources */,
+				FFFCA0EE290AC3A800A5CEE7 /* SetupViewController.storyboard in Resources */,
 				FFA06A0028ABA20900E873C1 /* Assets.xcassets in Resources */,
 				FF2D2AB428B40EE500C64947 /* MainViewController.storyboard in Resources */,
 			);
@@ -234,12 +259,15 @@
 				FFED14BD28ABCE9000C94F37 /* PollModel.swift in Sources */,
 				FFE865B728C1118A00159730 /* QuestionsModel.swift in Sources */,
 				FFB50DA728B7CB63003B4F95 /* MainView.swift in Sources */,
+				FFB457A0290ECA34002010A2 /* Setting.swift in Sources */,
 				FFE650EE28AE9C3C00AA1DCE /* MainViewController.swift in Sources */,
 				FF75726128AFFA0A00C549A3 /* +UIView.swift in Sources */,
 				FF75725D28AFF9C700C549A3 /* ProgressView.swift in Sources */,
 				FFE650EC28AE9BDC00AA1DCE /* LoginViewController.swift in Sources */,
 				FFB50DAB28B7CBE7003B4F95 /* LoginView.swift in Sources */,
+				FFFCA0EA290ABC1B00A5CEE7 /* SetupView.swift in Sources */,
 				FFA069F928ABA20600E873C1 /* SceneDelegate.swift in Sources */,
+				FFFCA0E7290ABBD300A5CEE7 /* SetupViewController.swift in Sources */,
 				FFB50DA328B7C9AC003B4F95 /* QuestionsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

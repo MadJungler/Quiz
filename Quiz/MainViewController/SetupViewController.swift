@@ -8,22 +8,19 @@
 import UIKit
 
 class SetupViewController: UIViewController {
-
+    
+    private let setupToMainIdentifier = "exitSettingsSegue"
+    
+    @IBOutlet var setupView: SetupView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupView.shuffleSwitch.setOn(Setting.shared.isRandomOrder, animated: false)
+        setupView.mainButtonTapHandler = {
+            self.performSegue(withIdentifier: self.setupToMainIdentifier, sender: nil)
+        }
+        setupView.shuffleSwitchHandler = { switchIsOn in
+            Setting.shared.setOrder(isRandom: switchIsOn)
+        }
     }
-
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
