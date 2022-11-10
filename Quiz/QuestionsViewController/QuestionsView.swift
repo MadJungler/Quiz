@@ -38,6 +38,7 @@ class QuestionsView: UIView {
     
     func setup(model: QuestionsModel) {
         questionLabel.text = model.title
+        questionButtons.forEach { $0.isHidden = true }
         for (index, variant) in model.variants.enumerated() {
             questionButtons[index].setTitle(variant, for: [])
             questionButtons[index].isHidden = false

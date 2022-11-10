@@ -14,6 +14,7 @@ class QuestionsViewController: UIViewController {
     var name: String?
     var questionIndex = 0
     var timer: Timer?
+    var pollTitle = ""
     @IBOutlet var questionsView: QuestionsView!
     
     private let questionsToMainIdentifier = "questionsToMain"
@@ -27,6 +28,16 @@ class QuestionsViewController: UIViewController {
         present(alert, animated: true)
     }
     
+    func saveCurrentGame() {
+        guard let name = name else {
+            return
+        }
+
+        let result = ResultModel(name: name, pollTitle: pollTitle, gameScore: questionIndex, date: Date())
+        Setting.shared.newResult(result)
+        print(Setting.shared.results)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         time = maxTime
@@ -37,7 +48,7 @@ class QuestionsViewController: UIViewController {
         
         let pollstorage = PollStorage()
         var firstPoll = pollstorage.polls[pollIndex]
-        
+        pollTitle = firstPoll.name
         if Setting.shared.isRandomOrder {
             firstPoll.questions.shuffle()
         }
@@ -51,10 +62,12 @@ class QuestionsViewController: UIViewController {
         
         questionLoad()
         
-        questionsView.answerButtonTapHandler = { variant in
+        questionsView.answerButtonTapHandler = { [weak self] variant in
+            guard let self = self else {return}
             if variant == firstPoll.questions[self.questionIndex].answer {
                 self.questionIndex += 1
                 if self.questionIndex >= firstPoll.questions.count {
+                    self.saveCurrentGame()
                     self.alertLoad(title: "You win! :)")
                     return
                 }
@@ -62,11 +75,13 @@ class QuestionsViewController: UIViewController {
                questionLoad()
                 
             } else {
+                self.saveCurrentGame()
                 self.alertLoad(title: "You lose :(")
             }
         }
         
-        questionsView.buttonTapHandler = {
+        questionsView.buttonTapHandler = { [weak self] in
+            guard let self = self else { return }
             self.performSegue(withIdentifier: self.questionsToMainIdentifier, sender: nil)
         }
     }
@@ -76,6 +91,7 @@ class QuestionsViewController: UIViewController {
             self.time -= 1
             if self.time <= 0 {
                 timer.invalidate()
+                self.saveCurrentGame()
                 self.alertLoad(title: "You lose!")
             }
             let isAnimated = self.time < self.maxTime

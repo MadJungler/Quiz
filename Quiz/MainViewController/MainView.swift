@@ -12,11 +12,17 @@ class MainView: UIView {
     @IBOutlet var nameLabel: UILabel!
     var buttonTapHandler: ((Int) -> Void)?
     var settingButtonTapHandler: (() -> Void)?
+    var resultButtonTapHandler: (() -> Void)?
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubview(xibView)
     }
+    
+    @IBAction func resultsButton() {
+        resultButtonTapHandler?()
+    }
+    
     @IBAction func settingsButtonDidTap(_ sender: UIButton) {
         settingButtonTapHandler?()
     }

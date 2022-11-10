@@ -7,12 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF018631290FFE7F00E78577 /* ResultModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF018630290FFE7F00E78577 /* ResultModel.swift */; };
 		FF2D2AB228B40EA700C64947 /* LoginViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2D2AB028B40EA700C64947 /* LoginViewController.storyboard */; };
 		FF2D2AB428B40EE500C64947 /* MainViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2D2AB328B40EE500C64947 /* MainViewController.storyboard */; };
 		FF2D2AB728B40F4600C64947 /* QuestionsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF2D2AB528B40F4600C64947 /* QuestionsViewController.storyboard */; };
 		FF75725D28AFF9C700C549A3 /* ProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75725C28AFF9C700C549A3 /* ProgressView.swift */; };
 		FF75725F28AFF9E800C549A3 /* ProgressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF75725E28AFF9E800C549A3 /* ProgressView.xib */; };
 		FF75726128AFFA0A00C549A3 /* +UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF75726028AFFA0A00C549A3 /* +UIView.swift */; };
+		FF8C0D612918046E00B87054 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C0D602918046E00B87054 /* ResultsViewController.swift */; };
+		FF8C0D632918048200B87054 /* ResultsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF8C0D622918048200B87054 /* ResultsViewController.storyboard */; };
+		FF8C0D67291808FD00B87054 /* ResultsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF8C0D65291808FD00B87054 /* ResultsTableViewCell.swift */; };
+		FF8C0D68291808FD00B87054 /* ResultsTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FF8C0D66291808FD00B87054 /* ResultsTableViewCell.xib */; };
+		FF9BC861291D24CB0016B94A /* +DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF9BC860291D24CB0016B94A /* +DateFormatter.swift */; };
 		FFA069F728ABA20600E873C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA069F628ABA20600E873C1 /* AppDelegate.swift */; };
 		FFA069F928ABA20600E873C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA069F828ABA20600E873C1 /* SceneDelegate.swift */; };
 		FFA06A0028ABA20900E873C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFA069FF28ABA20900E873C1 /* Assets.xcassets */; };
@@ -36,12 +42,18 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FF018630290FFE7F00E78577 /* ResultModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultModel.swift; sourceTree = "<group>"; };
 		FF2D2AB128B40EA700C64947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Quiz/Base.lproj/LoginViewController.storyboard; sourceTree = "<group>"; };
 		FF2D2AB328B40EE500C64947 /* MainViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainViewController.storyboard; sourceTree = "<group>"; };
 		FF2D2AB628B40F4600C64947 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Quiz/Base.lproj/QuestionsViewController.storyboard; sourceTree = "<group>"; };
 		FF75725C28AFF9C700C549A3 /* ProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressView.swift; sourceTree = "<group>"; };
 		FF75725E28AFF9E800C549A3 /* ProgressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressView.xib; sourceTree = "<group>"; };
 		FF75726028AFFA0A00C549A3 /* +UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+UIView.swift"; sourceTree = "<group>"; };
+		FF8C0D602918046E00B87054 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		FF8C0D622918048200B87054 /* ResultsViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ResultsViewController.storyboard; sourceTree = "<group>"; };
+		FF8C0D65291808FD00B87054 /* ResultsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsTableViewCell.swift; sourceTree = "<group>"; };
+		FF8C0D66291808FD00B87054 /* ResultsTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ResultsTableViewCell.xib; sourceTree = "<group>"; };
+		FF9BC860291D24CB0016B94A /* +DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "+DateFormatter.swift"; sourceTree = "<group>"; };
 		FFA069F328ABA20600E873C1 /* Quiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Quiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA069F628ABA20600E873C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA069F828ABA20600E873C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -86,6 +98,17 @@
 			path = CustomProgressView;
 			sourceTree = "<group>";
 		};
+		FF8C0D64291804B100B87054 /* ResultsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				FF8C0D602918046E00B87054 /* ResultsViewController.swift */,
+				FF8C0D622918048200B87054 /* ResultsViewController.storyboard */,
+				FF8C0D65291808FD00B87054 /* ResultsTableViewCell.swift */,
+				FF8C0D66291808FD00B87054 /* ResultsTableViewCell.xib */,
+			);
+			path = ResultsViewController;
+			sourceTree = "<group>";
+		};
 		FFA069EA28ABA20600E873C1 = {
 			isa = PBXGroup;
 			children = (
@@ -108,12 +131,15 @@
 				FFA069F628ABA20600E873C1 /* AppDelegate.swift */,
 				FFA069F828ABA20600E873C1 /* SceneDelegate.swift */,
 				FFED14BC28ABCE9000C94F37 /* PollModel.swift */,
+				FF018630290FFE7F00E78577 /* ResultModel.swift */,
 				FF75726028AFFA0A00C549A3 /* +UIView.swift */,
+				FF9BC860291D24CB0016B94A /* +DateFormatter.swift */,
 				FF75725728AFEDA300C549A3 /* CustomProgressView */,
 				FFA30A3228B014A3009DC394 /* LoginViewController */,
 				FFA30A3028B0141D009DC394 /* MainViewController */,
 				FFF937C4290A9B7900E75A5D /* SetupViewController */,
 				FFA30A3328B014CA009DC394 /* QuestionsViewController */,
+				FF8C0D64291804B100B87054 /* ResultsViewController */,
 				FFB4579E290EC9E8002010A2 /* Services */,
 				FFA069FF28ABA20900E873C1 /* Assets.xcassets */,
 				FFA06A0128ABA20900E873C1 /* LaunchScreen.storyboard */,
@@ -238,11 +264,13 @@
 				FFB50DAD28B7CBF3003B4F95 /* LoginView.xib in Resources */,
 				FF75725F28AFF9E800C549A3 /* ProgressView.xib in Resources */,
 				FF2D2AB228B40EA700C64947 /* LoginViewController.storyboard in Resources */,
+				FF8C0D632918048200B87054 /* ResultsViewController.storyboard in Resources */,
 				FF2D2AB728B40F4600C64947 /* QuestionsViewController.storyboard in Resources */,
 				FFFCA0EC290ABC3A00A5CEE7 /* SetupView.xib in Resources */,
 				FFB50DA928B7CB7B003B4F95 /* MainView.xib in Resources */,
 				FFFCA0EE290AC3A800A5CEE7 /* SetupViewController.storyboard in Resources */,
 				FFA06A0028ABA20900E873C1 /* Assets.xcassets in Resources */,
+				FF8C0D68291808FD00B87054 /* ResultsTableViewCell.xib in Resources */,
 				FF2D2AB428B40EE500C64947 /* MainViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,13 +284,17 @@
 			files = (
 				FFE650F028AE9C5400AA1DCE /* QuestionsViewController.swift in Sources */,
 				FFA069F728ABA20600E873C1 /* AppDelegate.swift in Sources */,
+				FF8C0D67291808FD00B87054 /* ResultsTableViewCell.swift in Sources */,
 				FFED14BD28ABCE9000C94F37 /* PollModel.swift in Sources */,
 				FFE865B728C1118A00159730 /* QuestionsModel.swift in Sources */,
 				FFB50DA728B7CB63003B4F95 /* MainView.swift in Sources */,
+				FF018631290FFE7F00E78577 /* ResultModel.swift in Sources */,
 				FFB457A0290ECA34002010A2 /* Setting.swift in Sources */,
+				FF8C0D612918046E00B87054 /* ResultsViewController.swift in Sources */,
 				FFE650EE28AE9C3C00AA1DCE /* MainViewController.swift in Sources */,
 				FF75726128AFFA0A00C549A3 /* +UIView.swift in Sources */,
 				FF75725D28AFF9C700C549A3 /* ProgressView.swift in Sources */,
+				FF9BC861291D24CB0016B94A /* +DateFormatter.swift in Sources */,
 				FFE650EC28AE9BDC00AA1DCE /* LoginViewController.swift in Sources */,
 				FFB50DAB28B7CBE7003B4F95 /* LoginView.swift in Sources */,
 				FFFCA0EA290ABC1B00A5CEE7 /* SetupView.swift in Sources */,

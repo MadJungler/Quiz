@@ -13,17 +13,21 @@ class MainViewController: UIViewController {
     private let mainToQuestionsIdentifier = "mainToQuestions"
     @IBOutlet var mainView: MainView!
     private let mainToSetupIdentifier = "MainToSetup"
-    
-    @IBAction func exitSettings(_ exitSettingsSegue: UIStoryboardSegue) {
-        }
+    private let mainToResultsIdentifier = "mainToResults"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainView.settingButtonTapHandler = {
+        mainView.resultButtonTapHandler = { [weak self] in
+            guard let self = self else { return }
+            self.performSegue(withIdentifier: self.mainToResultsIdentifier, sender: nil)
+        }
+        mainView.settingButtonTapHandler = { [weak self] in
+            guard let self = self else { return }
             self.performSegue(withIdentifier: self.mainToSetupIdentifier, sender: nil)
         }
         mainView.setupName(name ?? "")
-        mainView.buttonTapHandler = { buttonIndex in
+        mainView.buttonTapHandler = { [weak self] buttonIndex in
+            guard let self = self else { return }
             self.performSegue(withIdentifier: self.mainToQuestionsIdentifier, sender: buttonIndex)
         }
     }

@@ -20,7 +20,7 @@
                     </view>
                     <connections>
                         <outlet property="setupView" destination="5EZ-qb-Rvc" id="PbY-yh-VRs"/>
-                        <segue destination="5n1-mw-w47" kind="unwind" identifier="exitSettingsSegue" unwindAction="exitSettings:" id="0Ax-E8-ehx"/>
+                        <segue destination="5n1-mw-w47" kind="unwind" identifier="exitSettingsSegue" unwindAction="unwindToMain:" id="5bZ-7w-wpa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

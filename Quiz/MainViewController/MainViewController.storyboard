@@ -23,11 +23,22 @@
                         <outlet property="mainView" destination="Fm3-OM-JCB" id="LJz-1e-pVq"/>
                         <segue destination="JAl-sn-joE" kind="show" identifier="mainToQuestions" id="2C0-He-8bP"/>
                         <segue destination="eBD-1K-mMD" kind="show" identifier="MainToSetup" id="XIo-aR-rlB"/>
+                        <segue destination="IWE-73-bah" kind="show" identifier="mainToResults" id="DEI-FF-stK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RL3-RG-Tji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-733" y="263"/>
+        </scene>
+        <!--ResultsViewController-->
+        <scene sceneID="aYW-eo-EgT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ResultsViewController" id="IWE-73-bah" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0w7-mQ-wDF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxD-fd-3bT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="144"/>
         </scene>
         <!--SetupViewController-->
         <scene sceneID="OCu-NH-WKN">

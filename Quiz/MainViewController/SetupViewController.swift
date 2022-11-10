@@ -16,9 +16,11 @@ class SetupViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView.shuffleSwitch.setOn(Setting.shared.isRandomOrder, animated: false)
-        setupView.mainButtonTapHandler = {
+        setupView.mainButtonTapHandler = { [weak self] in
+            guard let self = self else { return }
             self.performSegue(withIdentifier: self.setupToMainIdentifier, sender: nil)
         }
+        
         setupView.shuffleSwitchHandler = { switchIsOn in
             Setting.shared.setOrder(isRandom: switchIsOn)
         }
