@@ -10,30 +10,20 @@ import UIKit
 class MainView: UIView {
     private lazy var xibView: UIView = getViewFromXib() ?? UIView()
     @IBOutlet var nameLabel: UILabel!
-    var buttonTapHandler: ((Int) -> Void)?
-    var settingButtonTapHandler: (() -> Void)?
-    var resultButtonTapHandler: (() -> Void)?
+    @IBOutlet weak var pollNameTableView: UITableView!
     
     required init?(coder: NSCoder) {
         super.init(coder: coder)
         addSubview(xibView)
+        pollNameTableView.separatorStyle = .none
+        pollNameTableView.isScrollEnabled = false
     }
     
-    @IBAction func resultsButton() {
-        resultButtonTapHandler?()
-    }
-    
-    @IBAction func settingsButtonDidTap(_ sender: UIButton) {
-        settingButtonTapHandler?()
-    }
     override func layoutSubviews() {
         super.layoutSubviews()
         xibView.frame = self.bounds
 }
     func setupName(_ name: String) {
         nameLabel.text = name
-    }
-    @IBAction func buttonViewDidTap(_ sender: UIButton) {
-        buttonTapHandler?(sender.tag)
     }
 }

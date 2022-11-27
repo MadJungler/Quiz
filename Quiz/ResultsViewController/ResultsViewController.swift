@@ -21,10 +21,6 @@ class ResultsViewController: UIViewController {
         
         resultsTableView.register(UINib(nibName: "ResultsTableViewCell", bundle: nil), forCellReuseIdentifier: resultCellIdentifier)
     }
-    
-    @IBAction func backButton(_ sender: Any) {
-        performSegue(withIdentifier: resultsToMainIdentifier, sender: nil)
-    }
 }
 
 extension ResultsViewController: UITableViewDelegate {

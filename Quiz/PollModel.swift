@@ -19,7 +19,7 @@ struct QuestionModel {
 }
 
 class PollStorage {
-    let polls = [
+   static let polls = [
         PollModel(
             name: "Animal",
             questions: [

@@ -38,14 +38,6 @@
                         </switch>
                     </subviews>
                 </stackView>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmw-mA-0Wh">
-                    <rect key="frame" x="20" y="44" width="65.5" height="31"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Назад"/>
-                    <connections>
-                        <action selector="backButtonDidTap:" destination="-1" eventType="touchUpInside" id="Bu7-uQ-Z4w"/>
-                    </connections>
-                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -55,10 +47,8 @@
                 <constraint firstAttribute="bottom" secondItem="pUM-2B-lXT" secondAttribute="bottom" id="Pwr-mB-BBq"/>
                 <constraint firstItem="pXM-AW-IVt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="Qkp-GE-478"/>
                 <constraint firstItem="pUM-2B-lXT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Tdd-we-yL2"/>
-                <constraint firstItem="Mmw-mA-0Wh" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="XqI-Nt-SgW"/>
                 <constraint firstAttribute="trailing" secondItem="pXM-AW-IVt" secondAttribute="trailing" constant="20" id="XvD-fb-2VJ"/>
                 <constraint firstItem="pUM-2B-lXT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f9y-AQ-Yyd"/>
-                <constraint firstItem="Mmw-mA-0Wh" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="kEl-mK-EC9"/>
             </constraints>
             <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
         </view>

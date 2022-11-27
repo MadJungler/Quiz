@@ -32,12 +32,13 @@
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="99 sec" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DD1-It-x1X">
                             <rect key="frame" x="20" y="7.5" width="52" height="21"/>
+                            <color key="tintColor" systemColor="linkColor"/>
                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                            <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
-                    <color key="backgroundColor" systemColor="systemBlueColor"/>
+                    <color key="backgroundColor" red="0.49085125338154634" green="0.69093634630343781" blue="0.86576704545454541" alpha="0.90816432119205293" colorSpace="custom" customColorSpace="sRGB"/>
                     <constraints>
                         <constraint firstAttribute="width" priority="999" constant="20" id="CFV-gy-5TM"/>
                         <constraint firstAttribute="trailing" secondItem="DD1-It-x1X" secondAttribute="trailing" constant="20" id="HFL-sv-yhQ"/>
@@ -65,10 +66,7 @@
     </objects>
     <resources>
         <image name="clock" catalog="system" width="128" height="121"/>
-        <systemColor name="secondarySystemBackgroundColor">
-            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
-        <systemColor name="systemBlueColor">
+        <systemColor name="linkColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>

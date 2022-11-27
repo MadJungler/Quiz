@@ -23,7 +23,7 @@ class ProgressView: UIView {
     private func setup() {
         addSubview(xibView)
         widthTimerProgressViewConstraints.constant = 100
-        self.layer.borderColor = UIColor.yellow.cgColor
+        self.layer.borderColor = UIColor.systemBlue.cgColor
         self.layer.borderWidth = 2
     }
     
@@ -38,11 +38,15 @@ class ProgressView: UIView {
         labelView.text = "\(remainingTime / 10) sec"
         
         widthTimerProgressViewConstraints.constant = (bounds.width - Constans.inset * 3 - clockImageView.frame.width) / CGFloat(seconds) * CGFloat(remainingTime)
-        
-        UIView.animate(withDuration: 1, delay: 0, options: .curveLinear) {
-            self.layoutIfNeeded()
+        if animated {
+            UIView.animate(withDuration: 1, delay: 0, options: .curveLinear) {
+                self.layoutIfNeeded()
+            }
+        } else {
+            UIView.performWithoutAnimation {
+                self.layoutIfNeeded()
+            }
         }
-    
     }
     
     private enum Constans {

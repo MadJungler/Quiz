@@ -12,24 +12,19 @@ class MainViewController: UIViewController {
     var name: String?
     private let mainToQuestionsIdentifier = "mainToQuestions"
     @IBOutlet var mainView: MainView!
-    private let mainToSetupIdentifier = "MainToSetup"
-    private let mainToResultsIdentifier = "mainToResults"
+    let cellIdentifier = "cell"
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        mainView.resultButtonTapHandler = { [weak self] in
-            guard let self = self else { return }
-            self.performSegue(withIdentifier: self.mainToResultsIdentifier, sender: nil)
-        }
-        mainView.settingButtonTapHandler = { [weak self] in
-            guard let self = self else { return }
-            self.performSegue(withIdentifier: self.mainToSetupIdentifier, sender: nil)
-        }
+        mainView.pollNameTableView.delegate = self
+        mainView.pollNameTableView.dataSource = self
+        
+       
         mainView.setupName(name ?? "")
-        mainView.buttonTapHandler = { [weak self] buttonIndex in
-            guard let self = self else { return }
-            self.performSegue(withIdentifier: self.mainToQuestionsIdentifier, sender: buttonIndex)
-        }
+        mainView.pollNameTableView.register(
+            UINib(nibName: "PollTitleTableViewCell", bundle: .main),
+            forCellReuseIdentifier: cellIdentifier
+        )
     }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
@@ -37,10 +32,31 @@ class MainViewController: UIViewController {
             let questionsVC = segue.destination as? QuestionsViewController
              questionsVC?.pollIndex = sender
              questionsVC?.name = self.name
-        } else if segue.identifier == mainToSetupIdentifier {
         }
     
     }
 
     @IBAction func unwindToMain(_ unwindSegue: UIStoryboardSegue) {}
+}
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        performSegue(withIdentifier: mainToQuestionsIdentifier, sender: indexPath.item)
+    }
+}
+
+extension MainViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        PollStorage.polls.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as? PollTitleTableViewCell
+            else { return UITableViewCell() }
+        cell.configure(text: PollStorage.polls[indexPath.item].name)
+
+        return cell
+    }
+    
+    
 }

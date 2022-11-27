@@ -8,10 +8,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Results View Controller-->
+        <!--Results-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ResultsViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Results" modalPresentationStyle="fullScreen" id="Y6W-OH-hqX" customClass="ResultsViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -23,20 +23,6 @@
                                 <rect key="frame" x="20" y="100" width="374" height="782"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSv-Jc-UA5">
-                                <rect key="frame" x="20" y="44" width="65.5" height="31"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Назад"/>
-                                <connections>
-                                    <action selector="backButton:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="4FF-HP-ttT"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результаты" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OLE-Xn-kuH">
-                                <rect key="frame" x="161.5" y="44" width="91" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -44,12 +30,8 @@
                             <constraint firstItem="gyu-Eo-Jw3" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" id="07K-pb-mai"/>
                             <constraint firstItem="vWP-hx-HxG" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" constant="20" id="2Tf-h8-iip"/>
                             <constraint firstItem="gyu-Eo-Jw3" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4sW-im-Quh"/>
-                            <constraint firstItem="jSv-Jc-UA5" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="BVX-KJ-ddI"/>
-                            <constraint firstItem="jSv-Jc-UA5" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="CBs-Fl-Jku"/>
-                            <constraint firstItem="OLE-Xn-kuH" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Hlg-1u-yTa"/>
                             <constraint firstItem="vWP-hx-HxG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="W2L-P5-DbU"/>
                             <constraint firstItem="gyu-Eo-Jw3" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="cxC-gg-6eb"/>
-                            <constraint firstItem="OLE-Xn-kuH" firstAttribute="centerX" secondItem="vDu-zF-Fre" secondAttribute="centerX" id="egb-J2-7Gn"/>
                             <constraint firstItem="vWP-hx-HxG" firstAttribute="top" secondItem="5EZ-qb-Rvc" secondAttribute="top" constant="100" id="fpi-CD-TWB"/>
                             <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="vWP-hx-HxG" secondAttribute="trailing" constant="20" id="hqH-5z-DLo"/>
                             <constraint firstAttribute="bottom" secondItem="gyu-Eo-Jw3" secondAttribute="bottom" id="vVw-ae-XP3"/>
