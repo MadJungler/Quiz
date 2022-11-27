@@ -9,7 +9,7 @@ import Foundation
 
 struct PollModel {
     let name: String
-    let questions: [QuestionModel]
+    var questions: [QuestionModel]
 }
 
 struct QuestionModel {
@@ -19,35 +19,51 @@ struct QuestionModel {
 }
 
 class PollStorage {
-    let polls = [
+   static let polls = [
         PollModel(
             name: "Animal",
             questions: [
                 QuestionModel(
-                    title: "Сколько ног у кота",
-                    variants: ["Одна", "Четыре"],
-                    answer: "Четыре"
+                    title: "Как по английски будет жаба?",
+                    variants: ["Chipmunk", "Frog", "Hedgehog", "Otter"],
+                    answer: "Frog"
                 ),
                 QuestionModel(
-                    title: "Сколько ног у кота",
-                    variants: ["Одна", "Четыре"],
-                    answer: "Четыре"
+                    title: "Как по английски будет носорог?",
+                    variants: ["Elk", "Capybara", "Hippopotamus", "Rhinoceros"],
+                    answer: "Rhinoceros"
                 )
 
             ]
         ),
         PollModel(
-            name: "Animal",
+            name: "Food",
             questions: [
                 QuestionModel(
-                    title: "Сколько ног у кота",
-                    variants: ["Одна", "Четыре"],
-                    answer: "Четыре"
+                    title: "Как по английски будет морковка?",
+                    variants: ["Grape", "Peach", "Carrot", "Broccoli"],
+                    answer: "Carrot"
                 ),
                 QuestionModel(
-                    title: "Сколько ног у кота",
-                    variants: ["Одна", "Четыре"],
-                    answer: "Четыре"
+                    title: "Как по английски будет ананас?",
+                    variants: ["Apple", "Pineapple", "Pear", "Banana"],
+                    answer: "Pineapple"
+                )
+
+            ]
+        ),
+        PollModel(
+            name: "Transport",
+            questions: [
+                QuestionModel(
+                    title: "Как по английски будет мотоцикл",
+                    variants: ["Bicycle", "Helicopter", "Quadrocopter", "Motorcycle"],
+                    answer: "Motorcycle"
+                ),
+                QuestionModel(
+                    title: "Как по английски будет грузовик?",
+                    variants: ["Rickshaw", "Truck", "Paroplane", "Bus"],
+                    answer: "Truck"
                 )
 
             ]

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="9Pc-Qn-1kd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="W5i-oP-khm">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Login View Controller-->
+        <!--Login-->
         <scene sceneID="wSb-X6-TMj">
             <objects>
                 <viewController storyboardIdentifier="loginScreen" id="9Pc-Qn-1kd" customClass="LoginViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -18,6 +18,7 @@
                         <viewLayoutGuide key="safeArea" id="vU3-lo-qhB"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" id="Low-5S-mTr"/>
                     <connections>
                         <outlet property="loginView" destination="s8h-bL-iOB" id="17c-jY-4jF"/>
                         <segue destination="REv-7W-Itz" kind="show" identifier="loginToMain" id="ZQI-HX-Fn4"/>
@@ -25,7 +26,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sil-DN-pkS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1836" y="305"/>
+            <point key="canvasLocation" x="-926.08695652173924" y="304.6875"/>
         </scene>
         <!--mainScreen-->
         <scene sceneID="ms2-WP-u5v">
@@ -35,7 +36,25 @@
                 </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g2y-4g-Hma" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-809" y="195"/>
+            <point key="canvasLocation" x="100.00000000000001" y="194.86607142857142"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Dy0-2N-Qdb">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="W5i-oP-khm" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BIe-Gs-dgZ">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="9Pc-Qn-1kd" kind="relationship" relationship="rootViewController" id="sAI-Ap-7gB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qkP-a4-VnR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1926" y="305"/>
         </scene>
     </scenes>
     <resources>

@@ -8,28 +8,63 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="Quiz" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="Quiz" customModuleProvider="target">
+            <connections>
+                <outlet property="bottomFormConstraint" destination="t99-4F-vsS" id="iMj-Fd-dco"/>
+                <outlet property="nameTextField" destination="mje-KM-86m" id="17t-k1-x6c"/>
+            </connections>
+        </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdC-Tf-TYs">
-                    <rect key="frame" x="174" y="71" width="67" height="31"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="plain" title="Button"/>
-                    <connections>
-                        <action selector="buttonViewDidTap:" destination="-1" eventType="touchUpInside" id="CKZ-CO-IwT"/>
-                    </connections>
-                </button>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" id="wXt-Ly-Ugd">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="100" translatesAutoresizingMaskIntoConstraints="NO" id="it2-Ss-69Y">
+                    <rect key="frame" x="20" y="476.5" width="374" height="285.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter a name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oUj-4j-LZI">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="20.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mje-KM-86m">
+                            <rect key="frame" x="0.0" y="120.5" width="374" height="34"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DdC-Tf-TYs">
+                            <rect key="frame" x="0.0" y="254.5" width="374" height="31"/>
+                            <state key="normal" title="Button"/>
+                            <buttonConfiguration key="configuration" style="plain" title="GO!"/>
+                            <connections>
+                                <action selector="buttonViewDidTap:" destination="-1" eventType="touchUpInside" id="CKZ-CO-IwT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="mje-KM-86m" firstAttribute="leading" secondItem="it2-Ss-69Y" secondAttribute="leading" id="1SR-Xv-LK0"/>
+                        <constraint firstAttribute="trailing" secondItem="mje-KM-86m" secondAttribute="trailing" id="4np-FQ-nQB"/>
+                    </constraints>
+                </stackView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemMintColor"/>
-            <point key="canvasLocation" x="132" y="130"/>
+            <constraints>
+                <constraint firstItem="it2-Ss-69Y" firstAttribute="top" relation="greaterThanOrEqual" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="PBS-JT-ERA"/>
+                <constraint firstItem="it2-Ss-69Y" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="UcR-tI-c7Q"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="it2-Ss-69Y" secondAttribute="trailing" constant="20" id="kHo-9q-Cu2"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="it2-Ss-69Y" secondAttribute="bottom" constant="100" id="t99-4F-vsS"/>
+            </constraints>
+            <point key="canvasLocation" x="-17171" y="-1030"/>
         </view>
     </objects>
     <resources>
+        <image name="loginBackground" width="640" height="1136"/>
         <systemColor name="systemMintColor">
             <color red="0.0" green="0.7803921568627451" blue="0.74509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

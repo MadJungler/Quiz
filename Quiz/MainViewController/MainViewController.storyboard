@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Main-->
         <scene sceneID="62C-Sx-gIh">
             <objects>
                 <viewController storyboardIdentifier="mainScreen" modalPresentationStyle="fullScreen" id="igU-Mx-3fQ" customClass="MainViewController" customModule="Quiz" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,9 +16,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="lfq-Ns-uh0"/>
-                        <color key="backgroundColor" systemColor="systemBlueColor"/>
+                        <color key="backgroundColor" systemColor="tertiarySystemBackgroundColor"/>
                     </view>
-                    <navigationItem key="navigationItem" id="j4Z-x5-cN7"/>
+                    <navigationItem key="navigationItem" title="Main" id="j4Z-x5-cN7">
+                        <barButtonItem key="leftBarButtonItem" title="Results" id="8Jj-sJ-879">
+                            <connections>
+                                <segue destination="IWE-73-bah" kind="show" id="9Bg-iv-tnb"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Settings" id="fve-U1-meO">
+                            <connections>
+                                <segue destination="eBD-1K-mMD" kind="show" id="4M4-1l-UUH"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="mainView" destination="Fm3-OM-JCB" id="LJz-1e-pVq"/>
                         <segue destination="JAl-sn-joE" kind="show" identifier="mainToQuestions" id="2C0-He-8bP"/>
@@ -27,6 +39,26 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RL3-RG-Tji" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-733" y="263"/>
+        </scene>
+        <!--ResultsViewController-->
+        <scene sceneID="aYW-eo-EgT">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ResultsViewController" id="IWE-73-bah" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="0w7-mQ-wDF"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gxD-fd-3bT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-31" y="144"/>
+        </scene>
+        <!--SetupViewController-->
+        <scene sceneID="OCu-NH-WKN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SetupViewController" id="eBD-1K-mMD" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="a4c-pZ-atu"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lne-ve-9vw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-25" y="192"/>
         </scene>
         <!--questionScreen-->
         <scene sceneID="88g-X2-aUB">
@@ -40,8 +72,8 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <systemColor name="tertiarySystemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
     </resources>
 </document>

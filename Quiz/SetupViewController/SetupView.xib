@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SetupView">
+            <connections>
+                <outlet property="shuffleSwitch" destination="yUh-ME-Nvs" id="6fb-mf-qjt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginBackground" translatesAutoresizingMaskIntoConstraints="NO" id="pUM-2B-lXT">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pXM-AW-IVt">
+                    <rect key="frame" x="20" y="94" width="374" height="31"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Перемешать вопросы" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b28-EV-dVj">
+                            <rect key="frame" x="0.0" y="0.0" width="315" height="31"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="yUh-ME-Nvs">
+                            <rect key="frame" x="325" y="0.0" width="51" height="31"/>
+                            <connections>
+                                <action selector="shuffleDidTap:" destination="-1" eventType="valueChanged" id="seM-iN-utg"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="pXM-AW-IVt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="7JX-98-fjj"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pUM-2B-lXT" secondAttribute="trailing" id="LRc-aW-GdU"/>
+                <constraint firstAttribute="bottom" secondItem="pUM-2B-lXT" secondAttribute="bottom" id="Pwr-mB-BBq"/>
+                <constraint firstItem="pXM-AW-IVt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="50" id="Qkp-GE-478"/>
+                <constraint firstItem="pUM-2B-lXT" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Tdd-we-yL2"/>
+                <constraint firstAttribute="trailing" secondItem="pXM-AW-IVt" secondAttribute="trailing" constant="20" id="XvD-fb-2VJ"/>
+                <constraint firstItem="pUM-2B-lXT" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="f9y-AQ-Yyd"/>
+            </constraints>
+            <point key="canvasLocation" x="131.8840579710145" y="85.714285714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="loginBackground" width="640" height="1136"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
